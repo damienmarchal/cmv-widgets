@@ -1,4 +1,6 @@
- function setNewValue(target, currentValue, newValue, formatter)
+const URL = "http://localhost:8080/";  
+
+function setNewValue(target, currentValue, newValue, formatter)
   {
     /// We can now start animating things
     $(target).prop('Counter', currentValue).animate({
@@ -26,6 +28,25 @@ var formatter = function(value)
 
 totalKm = 0
 numberFormatter = new Intl.NumberFormat('fr-FR');
+
+function init(teamName) {
+	 $.ajax({
+    url: URL+teamName+".json",
+    dataType: "json",
+    cache : false,
+    success: function(json)
+    {
+      $( "meta[property='og:title']" ).attr("content", json.title);
+ 	  $( "meta[property='og:image']" ).attr("content", json.preview);
+      $( "meta[name='twitter:title']" ).attr("content", json.title);
+      $( "meta[name='twitter:image']" ).attr("content", json.preview);
+      $('.title').text(json.title);
+      $('#blason').attr("src", json.blason);
+      load(json.teams)
+    }
+  });
+	
+}
 
 function load(teamsInGroup)
 {

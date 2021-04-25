@@ -4,15 +4,15 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:image" content="http://dmarchal.space/challengeMEL2021/widgets/santes-preview.png" />
+  <meta property="og:image" content="..." />
   <meta property="og:url"content="http://dmarchal.space/challengeMEL2021/widgets/santes.html" />
-  <meta property="og:title" content="Participation ville de Santes au challenge vélo 2021." />
+  <meta property="og:title" content="..." />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@damienmarchal">
   <meta name="twitter:creator" content="@damienmarchal">
-  <meta name="twitter:title" content="Participation de Santes au challenge vélo 2021.">
+  <meta name="twitter:title" content="...">
   <meta name="twitter:description" content="Toutes les stats des différentes éditions du Challenge Métropolitain du vélo #CMV.">
-  <meta name="twitter:image" content="http://dmarchal.space/challengeMEL2021/widgets/santes-preview.png">
+  <meta name="twitter:image" content="...">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
@@ -25,11 +25,11 @@
   <div class="container-fluid rounded text-white" style="background-color:#2e97bd">
     <div class="row bg-dark" >
       <div class="col-1  mt-2" >
-        <img src="./santes-blason.png" width="32"></img>
+        <img id="blason"  width="32"></img>
       </div>
       <div class="col-10 text-center mt-2">
-        <h4>
-          Participation de Santes à la 4ème édition du challenge métropolitain du vélo.
+        <h4 class="title">
+          ...
         </h4>
       </div>
     </div>
@@ -95,11 +95,8 @@
   <script src="widget.js">
 </script>
 <script>
-teams = {
-        "roule pour santes" : "rps",
-        "Santes, ma ville" : "smv",
-      }
-window.onload = load(teams);
+var urlParams = new URLSearchParams(window.location.search);
+window.onload = init(urlParams.get("group"));
 </script>
 
 
