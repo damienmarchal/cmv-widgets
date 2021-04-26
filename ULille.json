@@ -1,0 +1,20 @@
+{
+  "title": "L'Université de Lille s'engage dans la 4e édition du challenge métropolitain du vélo !",
+  "blason": null,
+  "preview": "./ulille-preview.png",
+  "background_style" : "background-color:#ac2773",
+  "teams": {
+    "Université de Lille" : "ulille",
+    "Université de Lille - GLYCOBIKERS" : "ulille-glycobikers",
+    "Université de Lille - IUT A" : "ulille-uita",
+    "Université de Lille - Polytech Lille" : "ulille-polytech",
+    "Université de Lille - LOA" : "ulille-loa",
+    "Université de Lille - ASP" : "ulille-asp",
+    "Université de LILLE - CLIL" : "ulille-clil",
+    "Université de Lille - DGDNum" : "ulille-dgdnum",
+    "Université de Lille - CRISTAL" : "ulille-cristal",
+    "Université de Lille - TVES" : "ulille-tves",
+    "Université de lille SUAPS" : "ulille-suaps",
+    "Université de Lille - URePSSS/FSSEP en selle" : "ulille-urepss"
+  }
+}
