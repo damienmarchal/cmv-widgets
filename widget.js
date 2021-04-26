@@ -1,61 +1,77 @@
-const URL = "http://localhost:8080/";  
+const URL = "./";
 
+/// change value of a numeric fields with an animation changing
+/// progressively the value from previous one to new one.
 function setNewValue(target, currentValue, newValue, formatter)
-  {
-    /// We can now start animating things
-    $(target).prop('Counter', currentValue).animate({
-      Counter: newValue
-    },
+{
+  /// We can now start animating things
+  $(target).prop('Counter', currentValue).animate({
+    Counter: newValue
+  },{
+    duration: 1000,
+    easing: 'swing',
+    step: function (value)
     {
-      duration: 1000,
-      easing: 'swing',
-      step: function (value)
-      {
-        $(this).text(formatter(value));
-      }
+      $(this).text(formatter(value));
     }
-  );
-} /// End of setNewValue
-
-function displayTeams(name, id) {
-	return `<div class="col-sm"><ul><li> ${name}: <i><span id="${id}">... inscrits, ... Km</span></i> </li></ul></div>`; 
+  });
 }
 
+/// Return the html line for one of the team entry.
+function getHtmlForTeamEntry(name, id)
+{
+  return `<div class="col-sm"><ul><li> ${name}: <i><span id="${id}">... inscrits, ... Km</span></i> </li></ul></div>`;
+}
+
+/// Format numbers with french style and using ceil to round off
+numberFormatter = new Intl.NumberFormat('fr-FR');
 var formatter = function(value)
 {
-	return numberFormatter.format(Math.ceil(value)) 
+  return numberFormatter.format(Math.ceil(value))
 }
 
 totalKm = 0
-numberFormatter = new Intl.NumberFormat('fr-FR');
-
 function init(teamName) {
-	 $.ajax({
+  $.ajax({
     url: URL+teamName+".json",
     dataType: "json",
     cache : false,
     success: function(json)
     {
       $( "meta[property='og:title']" ).attr("content", json.title);
- 	  $( "meta[property='og:image']" ).attr("content", json.preview);
+      $( "meta[property='og:image']" ).attr("content", json.preview);
       $( "meta[name='twitter:title']" ).attr("content", json.title);
       $( "meta[name='twitter:image']" ).attr("content", json.preview);
       $('.title').text(json.title);
       $('#blason').attr("src", json.blason);
-      load(json.teams)
+      if(json.blason===null)
+        $('#blason').hide()
+      $('#maincontainer').attr("style", json.background_style);
+      load(json.teams);
     }
   });
-	
 }
 
 function load(teamsInGroup)
 {
-	
-	for( team in teamsInGroup ) {
-		document.querySelector('.teams').innerHTML += displayTeams(team, teamsInGroup[team])	
-	}
-  
-	
+  rows = "";
+  columns = "";
+  teams = Object.keys(teamsInGroup);
+  for( index in teams )
+  {
+
+    team = teams[index];
+    columns += getHtmlForTeamEntry(team, teamsInGroup[team]);
+    if(index%2 === 1)
+    {
+      rows += "<div class='row'>"+columns+"</div>";
+      columns="";
+    }
+  }
+  if(columns)
+    rows += "<div class='row'>"+columns+"</div>";
+  document.querySelector('.teams').innerHTML = rows;
+
   $.ajax({
     url: "https://www.naviki.org/naviki/api/v5/Contest/2/findContest/51090",
     dataType: "json",

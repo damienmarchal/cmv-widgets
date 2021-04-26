@@ -22,15 +22,13 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-  <div class="container-fluid rounded text-white" style="background-color:#2e97bd">
+  <div id="maincontainer" class="container-fluid rounded text-white">
     <div class="row bg-dark" >
       <div class="col-1  mt-2" >
-        <img id="blason"  width="32"></img>
+        <img id="blason" width="32"/>
       </div>
       <div class="col-10 text-center mt-2">
-        <h4 class="title">
-          ...
-        </h4>
+        <h4 class="title"> ... </h4>
       </div>
     </div>
     <hr/>
@@ -49,20 +47,16 @@
         <h6>
           (sur <span id="totalKm">...</span>)
         </h6>
-
       </div>
       <div class="col-sm">
-
         <h4>
           <span id="numberOfMembers-lille">...</span> participants
         </h4>
         <h6>
           (sur <span id="numberOfMembers">...</span>)
         </h6>
-
       </div>
       <div class="col-sm">
-
         <h4>
           <span id="numberOfTeams-lille">...</span> équipes
         </h4>
@@ -78,9 +72,10 @@
         Nos équipes:
       </div>
     </div>
-
-    <div id="line2" class="row teams">
+    <hr/>
+    <div id="line2" class="teams">
     </div>
+    <hr/>
 
     <div class="row text-center bg-dark">
       <div class="col-sm mb-2">
@@ -92,13 +87,11 @@
     </div>
   </div>
 
-  <script src="widget.js">
-</script>
-<script>
-var urlParams = new URLSearchParams(window.location.search);
-window.onload = init(urlParams.get("group"));
-</script>
-
+  <script src="widget.js"></script>
+  <script>
+    var urlParams = new URLSearchParams(window.location.search);
+    window.onload = init(urlParams.get("group"));
+  </script>
 
 </body>
 </html>
