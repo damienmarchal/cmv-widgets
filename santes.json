@@ -1,9 +1,10 @@
 {
-    "title": "Participation ville de Santes au challenge velo 2021.",
-    "blason": "./santes-blason.png",
-    "preview": "http://dmarchal.space/challengeMEL2021/widgets/santes-preview.png",	
-	"teams": {
-        "roule pour santes" : "rps",
-        "Santes, ma ville" : "smv"
-      }
+  "title": "Participation ville de Santes au challenge velo 2021.",
+  "blason": "./santes-blason.png",
+  "preview": "./santes-preview.png",	
+  "background_style" : "background-color:#2e97bd",
+  "teams": {
+    "roule pour santes" : "rps",
+    "Santes, ma ville" : "smv"
+  }
 }
