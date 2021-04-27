@@ -18,9 +18,12 @@ function setNewValue(target, currentValue, newValue, formatter)
 }
 
 /// Return the html line for one of the team entry.
-function getHtmlForTeamEntry(name, id)
+function getHtmlForTeamEntry(name, id, withDetails)
 {
-  return `<div class="col-sm"><ul><li> ${name}: <i><span id="${id}">... inscrits, ... Km</span></i> </li></ul></div>`;
+  entry = `<div class="col-sm"><ul><li> ${name}`
+  if(withDetails)
+    return entry + `: <i><span id="${id}">... inscrits, ... Km</span></i> </li></ul></div>`;
+  return entry + "</div>"
 }
 
 /// Format numbers with french style and using ceil to round off
@@ -31,7 +34,8 @@ var formatter = function(value)
 }
 
 totalKm = 0
-function init(teamName) {
+function init(teamName, withDetails)
+{
   $.ajax({
     url: URL+teamName+".json",
     dataType: "json",
@@ -47,12 +51,12 @@ function init(teamName) {
       if(json.blason===null)
         $('#blason').hide()
       $('#maincontainer').attr("style", json.background_style);
-      load(json.teams);
+      load(json.teams, withDetails);
     }
   });
 }
 
-function load(teamsInGroup)
+function load(teamsInGroup, withDetails)
 {
   rows = "";
   columns = "";
@@ -61,7 +65,7 @@ function load(teamsInGroup)
   {
 
     team = teams[index];
-    columns += getHtmlForTeamEntry(team, teamsInGroup[team]);
+    columns += getHtmlForTeamEntry(team, teamsInGroup[team], withDetails);
     if(index%2 === 1)
     {
       rows += "<div class='row'>"+columns+"</div>";
