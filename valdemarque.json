@@ -1,19 +1,23 @@
 {
-  "title": "Le Val de Marque participe 4e édition du challenge métropolitain du vélo !",
+  "title": "Le Val de Marque participe à la 4e édition du challenge métropolitain du vélo !",
   "blason": null,
   "preview": "",
-  "background_style" : "background-color:#ac2773",
+  "background_style" : "background-color: #61cfe0",
   "teams": {
-    "Anstaing - Val de Marque à vélo !" : "anstaing",
-    "Baisieux En VAl de Marque - BE VAM" : "baisieux",
-    "Bouvines riders (Val de Marque)" : "bouvines",
+    "Sailly Vélo de la Marque" : "sailly",
+    "WillemS'Oxygène": "willems",
     "FOREST VAL DE MARQUE EN SELLE" : "forest",
+    "Baisieux En VAl de Marque - BE VAM" : "baisieux",
+    "Sainghin en Melantois - Val de Marque à vélo " : "sainghin",
     "Grus'à vélo Val de Marque" : "gruson",
+    "Anstaing - Val de Marque à vélo !" : "anstaing",
+    "Tressin - Val de Marque à vélo" : "tressin",
+    "Bouvines riders (Val de Marque)" : "bouvines",
     "La p'tite reine de Chéreng - Val de Marque à vélo !" : "chereng",
     "Péronne en Mélantois-Val de Marque à vélo" : "peronne",
-    "Sailly Vélo de la Marque" : "sailly",
-    "Sainghin en Melantois - Val de Marque à vélo " : "sainghin",
-    "Tressin - Val de Marque à vélo" : "tressin",
-    "Ville de Hem - Val de Marque à vélo" : "hem"     
+    "Ville de Hem - Val de Marque à vélo" : "hem", 
+    "Hem en selle" : "hem2",
+    "Hémois et moi" : "hem3",
+    "lesptitesreinesduValdeMarque" : "lpr"
   }
 }

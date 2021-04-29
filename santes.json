@@ -4,7 +4,8 @@
   "preview": "./santes-preview.png",	
   "background_style" : "background-color:#2e97bd",
   "teams": {
-    "roule pour santes" : "rps",
-    "Santes, ma ville" : "smv"
+    "Santes, ma ville" : "smv",
+    "roule pour Santes " : "rps",
+    "BIKE SCHOOL CHALLENGE Notre Dame Sainte Thérèse SANTES": "bscndst"
   }
 }
