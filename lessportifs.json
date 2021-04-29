@@ -1,0 +1,15 @@
+{
+  "title": "Les clubs de sports aussi participent au 4e édition du challenge métropolitain du vélo !",
+  "blason": null,
+  "preview": "",
+  "background_style" : "background-color: #61cfe0",
+  "teams": {
+    "OSM Sequedin Foot" : "foot",
+    "Comité Nord Handball" : "hb",
+    "Groupe Running Trail et ses amis à vélo" : "trail",
+    "Ligue de Rugby" : "rugby",
+    "Lille Métropole Athlétisme" : "athlé", 
+    "handisport cyclisme Hellemmes" : "handisport",
+    "Courir à Comines" : "pied1"
+  }
+}
