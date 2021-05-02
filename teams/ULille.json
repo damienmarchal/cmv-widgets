@@ -6,18 +6,19 @@
   "teams": {
     "Université de Lille" : "ulille",
     "Université de Lille - GLYCOBIKERS" : "ulille-glycobikers",
+    "Université de lille SUAPS" : "ulille-suaps",
+    "Université de Lille - URePSSS/FSSEP en selle" : "ulille-urepss",
     "Université de Lille - IUT A" : "ulille-uita",
     "Université de Lille - Polytech Lille" : "ulille-polytech",
     "Université de Lille - LOA" : "ulille-loa",
+    "Université de Lille - PsychoCycles" : "ulille-psycho",
     "Université de Lille - ASP" : "ulille-asp",
     "Université de LILLE - CLIL" : "ulille-clil",
     "Université de Lille - DGDNum" : "ulille-dgdnum",
     "Université de Lille - CRISTAL" : "ulille-cristal",
     "Université de Lille - TVES" : "ulille-tves",
     "Université de Lille - UFR3S" : "ulille-ufr3s",
-    "Université de lille SUAPS" : "ulille-suaps",
-    "Université de Lille - URePSSS/FSSEP en selle" : "ulille-urepss",
-    "Université de Lille - PsychoCycles" : "ulille-psycho",
-    "ASEULille" : "ulille-ase"
+    "Université de Lille - bât B5-6 Cité Scientifique" : "ulille-bat56",
+    "Université de Lille - ASEUL" : "ulille-ase"
   }
 }
