@@ -1,0 +1,23 @@
+{
+  "title": "Les weppes participe à la 4e édition du challenge métropolitain du vélo !",
+  "blason": null,
+  "preview": "",
+  "background_style" : "background-color: #61cfe0",
+  "teams": {
+    "A bicycl'weppes" : "abw",
+    "Le Clos d’Hespel-Fournes-en-Weppes": "lchfew",
+    "Sainghin en weppes" : "sew",
+    "Sainghin-en-Weppes en Selle !" : "sewes",
+    "Sainte Marie - Sainghin en Weppes" : "smsew",
+    "Herlies à vélo " : "hav",
+    "Sainte Marie Beaucamps à vélo" : "smbav",
+    "Haubourdin à vélo " : "hav",
+    "Jules Ferry Haubourdin" : "jfh",
+    "Ville de Loos" : "vdl",
+    "alexthib de Ste Marie Beaucamps" : "asteb", 
+    "OSM Sequedin Foot" : "peronne",
+    "Santes, ma ville" : "smv",
+    "roule pour Santes " : "rps",
+    "BIKE SCHOOL CHALLENGE Notre Dame Sainte Thérèse SANTES": "bscndst"
+  }
+}
