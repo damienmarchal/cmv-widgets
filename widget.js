@@ -61,9 +61,11 @@ function load(teamsInGroup, withDetails)
   rows = "";
   columns = "";
   teams = Object.keys(teamsInGroup);
+  teams = teams.sort(function(teamA,teamB){
+    return teamsInGroup[teamA]["totalKmInsideBoundary"] <
+           teamsInGroup[teamB]["totalKmInsideBoundary"]});
   for( index in teams )
   {
-
     team = teams[index];
     columns += getHtmlForTeamEntry(team, teamsInGroup[team], withDetails);
     if(index%2 === 1)
