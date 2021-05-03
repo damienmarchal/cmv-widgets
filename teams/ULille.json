@@ -1,7 +1,7 @@
 {
   "title": "L'Université de Lille s'engage dans la 4e édition du challenge métropolitain du vélo !",
   "blason": null,
-  "preview": "./ulille-preview.png",
+  "preview": "./previews/ulille-preview.png",
   "background_style" : "background-color:#ac2773",
   "teams": {
     "Université de Lille" : "ulille",

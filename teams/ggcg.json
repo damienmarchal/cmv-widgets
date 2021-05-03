@@ -1,6 +1,6 @@
 {
     "title": "Grands Gestes ChainGang",
-    "blason": "./ggcg_blason.png",
+    "blason": "./blasons/ggcg_blason.png",
     "preview": "",
     "background_style" : "background-color:#ffc324",
     "teams": {

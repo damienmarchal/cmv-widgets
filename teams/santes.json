@@ -1,7 +1,7 @@
 {
   "title": "Participation ville de Santes au challenge velo 2021.",
-  "blason": "./santes-blason.png",
-  "preview": "./santes-preview.png",	
+  "blason": "./blasons/santes-blason.png",
+  "preview": "./previews/santes-preview.png",	
   "background_style" : "background-color:#2e97bd",
   "teams": {
     "Santes, ma ville" : "smv",

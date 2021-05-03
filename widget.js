@@ -1,4 +1,4 @@
-const URL = "./";
+const URL = "./teams/";
 
 /// change value of a numeric fields with an animation changing
 /// progressively the value from previous one to new one.
