@@ -1,7 +1,7 @@
 {
   "title": "ADEO We make a Positive place to live",
-  "blason": "./adeo-blason.png",
-  "preview": "./adeo-preview.png",
+  "blason": "./blasons/adeo-blason.png",
+  "preview": "./previews/adeo-preview.png",
   "background_style" : "background-color:#2e97bd",
   "teams": {
     "AdeoRouleAVélo" : "arav",
