@@ -1,0 +1,9 @@
+{
+    "title": "Grands Gestes ChainGang",
+    "blason": "./ggcg_blason.png",
+    "preview": "",
+    "background_style" : "background-color:#ffc324",
+    "teams": {
+      "Grands Gestes ChainGang" : "ggcg"
+    }
+  }
