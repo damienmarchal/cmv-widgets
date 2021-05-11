@@ -1,0 +1,37 @@
+{
+  "title": "Les équipes à proximité de la Haute-Borne",
+  "blason": "./blasons/hb.png",
+  "preview": "./hb-preview.png",
+  "background_style" : "background-color:#3fa535",
+  "teams": {
+    "Auchan RED BIRDS" : "arb",
+    "AdeoRouleAVélo" : "adeo",
+    "Bonduelle à Bicyclette" : "bonduelle",
+    "A vélo Sourceo!!!" : "sourceo",
+    "cim-sa" : "simsa",
+    "RESEAU ENTREPRENDRE NORD" : "ren",
+    
+    "Inria Lille : la recherche à vélo" : "inria",
+    "Centrale Lille à vélo" : "clav",
+
+    "Haute Borne les habitants": "hblh",
+    "Sainghin en Melantois - Val de Marque à vélo ": "semvdm",
+    "Tressin - Val de Marque à vélo" : "tvdm",
+    "Lesquin en selle" : "les",
+    
+    "Université de Lille" : "ulille",
+    "Université de Lille - GLYCOBIKERS" : "ulille-glycobikers",
+    "Université de lille SUAPS" : "ulille-suaps",
+    "Université de Lille - URePSSS/FSSEP en selle" : "ulille-urepss",
+    "Université de Lille - IUT A" : "ulille-uita",
+    "Université de Lille - Polytech Lille" : "ulille-polytech",
+    "Université de Lille - LOA" : "ulille-loa",
+    "Université de Lille - PsychoCycles" : "ulille-psycho",
+    "Université de Lille - ASP" : "ulille-asp",
+    "Université de Lille - CRISTAL" : "ulille-cristal",
+    "Université de Lille - bât B5-6 Cité Scientifique" : "ulille-bat56",
+    "Université de Lille - ASEUL" : "ulille-ase"
+    
+    
+  }
+}
